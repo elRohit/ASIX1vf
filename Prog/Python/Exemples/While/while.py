@@ -30,4 +30,29 @@ while resposta != "4":
     elif resposta != "4":
         print("Apren a llegir ciego!")
 '''         
+# ....
+'''
+paraula= input("Paraula:")
+while not(paraula == "fi" or paraula == "acaba"):
+    paraula= input("Paraula:")
+'''
+# Sumar xifres ( SUMADOR)ç
+'''
+suma= 0
+numero= int(input("Numero: "))
+strNumero= str(numero)
+for xifra in strNumero:
+    suma= suma + int(xifra)
+    print(xifra)
+'''
+# Sumar tots els elements d'una llista
+llista= [1,2,3,4,5,6,7,8,9,10]
+sum = 0
+i=0
+while i<len(llista) :
+    element = llista[i]
+    sum = sum + element
+    i= i+1
+    
+print(sum)
 
