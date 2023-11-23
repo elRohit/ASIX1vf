@@ -2,7 +2,8 @@
 
 paraula = input("Paraula:")
 count = 0
-while not(paraula == "fi"):
-    count += 1
+while paraula != "fi":
+    count = count + 1
     paraula = input("Paraula:")
+
 print("You have entered", count, "words.")
