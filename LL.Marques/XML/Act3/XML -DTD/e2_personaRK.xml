@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE persona [
+    <!-- Definició de l'element persona -->
+    <!ELEMENT persona (nif, nom, cognoms+, telefons+, sexe?)>
+    <!-- Definició de l'element nif -->
+    <!ELEMENT nif (#PCDATA)>
+    <!-- Definició de l'element nom -->
+    <!ELEMENT nom (#PCDATA)>
+    <!-- Definició de l'element cognoms -->
+    <!ELEMENT cognoms (#PCDATA)>
+    <!-- Definició de l'element telefons -->
+    <!ELEMENT telefons (#PCDATA)>
+    <!-- Definició de l'element sexe -->
+    <!ELEMENT sexe (#PCDATA)>
+]>
+<!-- Element persona amb els seus elements fills buits -->
+<persona>
+    <nif>12345678A</nif>
+    <nom>Joan</nom>
+    <cognoms>Pérez Gimeno</cognoms>
+    <telefons>123456789</telefons>
+    <sexe>Home</sexe>
+</persona>

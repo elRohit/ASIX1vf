@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<usuaris>
+  <usuari>
+    <NomUsuari>rocket</NomUsuari>
+    <X>X</X>
+    <IdUsuari>1001</IdUsuari>
+    <IdGrup>1001</IdGrup>
+    <NomComplet>Rocket</NomComplet>
+    <DirectoriInici>/home/rocket</DirectoriInici>
+    <intèrpretOrdres>/bin/bash</intèrpretOrdres>
+  </usuari>
+  <usuari>
+    <NomUsuari>rohit</NomUsuari>
+    <X>X</X>
+    <IdUsuari>1002</IdUsuari>
+    <IdGrup>1002</IdGrup>
+    <NomComplet>Rohit</NomComplet>
+    <DirectoriInici>/home/rohit</DirectoriInici>
+    <intèrpretOrdres>/bin/bash</intèrpretOrdres>
+  </usuari>
+</usuaris>

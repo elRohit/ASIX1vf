@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE temporada SYSTEM "a1_temporadaRK.dtd">
+<temporada any="2020">
+  <jornada número="1">
+    <partit número="1">
+      <data>05-02-2020</data>
+      <estadi espectadors="67000">Twickenham</estadi>
+      <local>Anglaterra</local>
+      <visitant>Escòcia</visitant>
+      <resultat local="34" visitant="34"></resultat>
+      <meteo>sol</meteo>
+    </partit>
+    <partit número="1">
+      <data>05-02-2020</data>
+      <estadi espectadors="53000">Millenium</estadi>
+      <local>Gal·les</local>
+      <visitant>Irlanda</visitant>
+      <resultat local="24" visitant="16"></resultat>
+    </partit>
+  </jornada>
+  <jornada número="2">
+    <partit número="1">
+      <data>12-02-2020</data>
+      <estadi espectadors="58000">Lansdowne Road</estadi>
+      <local>Irlanda</local>
+      <visitant>Itàlia</visitant>
+      <resultat local="43" visitant="3"></resultat>
+      <meteo>vent</meteo>
+    </partit>
+    <partit número="2">
+      <data>12-02-2020</data>
+      <estadi espectadors="42000">Murrayfield</estadi>
+      <local>Escòcia</local>
+      <visitant>França</visitant>
+      <resultat local="12" visitant="14"></resultat>
+    </partit>
+  </jornada>
+</temporada>

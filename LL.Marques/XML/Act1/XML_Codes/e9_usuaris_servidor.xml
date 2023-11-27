@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<server_users>
+    <usuari>
+        <username>aruiz </username>
+        <password>DIOS </password>
+        <email>aruiz@gmail.com </email>
+        <rol>Admin</rol>
+    </usuari>
+    <usuari>
+        <username>csoler </username>
+        <password>DIOS </password>
+        <email>csoler@gmail.com </email>
+        <rol>Comú</rol>
+    </usuari>
+    <usuari>
+        <username>crodriguez </username>
+        <password>DIOS </password>
+        <email>crodriguez@gmail.com</email>
+        <rol>Analista</rol>
+    </usuari>
+    <usuari>
+        <username>apascual </username>
+        <password>DIOS </password>
+        <email>apascual@gmail.com</email>
+        <rol>Comú especial</rol>
+    </usuari>
+    <usuari>
+        <username>rkumar </username>
+        <password>DIOS</password>
+        <email>r.kumar@gmail.com </email>
+        <rol>Propietari</rol>
+    </usuari>
+    
+</server_users>

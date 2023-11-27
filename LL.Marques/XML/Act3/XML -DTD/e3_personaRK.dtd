@@ -1,0 +1,10 @@
+<!ELEMENT persona (NIF, nom, cognoms, telefons?, correus?, sexe?)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognoms (cognom+)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT telefons (telefon*)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT correus (correu*)>
+<!ELEMENT correu (#PCDATA)>
+<!ELEMENT sexe (#PCDATA)>

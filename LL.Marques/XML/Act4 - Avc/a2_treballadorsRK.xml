@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE treballadors SYSTEM "a2_treballadorsRK.dtd">
+<treballadors>
+  <treballador tipus="director" departament="administracio">
+    <nom>Jaume</nom>
+    <cognom>Pons</cognom>
+    <any_entrada>1998</any_entrada>
+    <salari>2345</salari>
+  </treballador>
+  <treballador tipus="enginyer" departament="obres">
+    <nom>Anna</nom>
+    <cognom>Pico</cognom>
+    <cognom>Ruiz</cognom>
+    <any_entrada>1987</any_entrada>
+    <salari>2245</salari>
+  </treballador>
+  <treballador tipus="oficina" departament="vendes">
+    <nom>Maria</nom>
+    <cognom>Garcia</cognom>
+    <cognom>Pagès</cognom>
+    <any_entrada>2008</any_entrada>
+    <salari>1945</salari>
+    <sexe>Dona</sexe>
+  </treballador>
+  <treballador tipus="oficina" departament="comercial">
+    <nom>Manuel</nom>
+    <cognom>Pera</cognom>
+    <cognom>Llimona</cognom>
+    <any_entrada>2018</any_entrada>
+    <salari>2006</salari>
+  </treballador>
+</treballadors>

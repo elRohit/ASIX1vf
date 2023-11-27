@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<usuari>
+    <nom>jmaria </nom>
+    <password>Soysecreto! </password>
+    <uid>10001 </uid>
+    <gid>101001 </gid>
+    <uid_info>Res </uid_info>
+    <telefon>631167088</telefon>
+    <directorihome>C:\users\jmaria </directorihome>
+    <shell>\bin </shell>
+</usuari>

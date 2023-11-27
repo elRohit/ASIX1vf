@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<llibre>
+  <autors>
+    <author>
+      <nom>Author1FirstName</nom>
+      <cognoms>Author1LastName</cognoms>
+    </author>
+    <author>
+       <nom>Author2FirstName</nom>
+      <cognoms>Author2LastName</cognoms>
+    </author>
+  </autors>
+  <secció>
+    <titol>Section1Title</titol>
+    <capítol>
+      <titol>Chapter1Title</titol>
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+    <capítol>
+      <title>Chapter2Title</title>
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+  </secció>
+  <secció>
+    <title>Section2Title</title>
+    <chapter>
+      <title>Chapter1Title</title>
+      <paragraph>Paragraph1Text</paragraph>
+      <paragraph>Paragraph2Text</paragraph>
+    </chapter>
+    <capítol>
+      <titol>Chapter2Title</titol>
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+  </secció>
+</llibre>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persona>
+    <dni>12845771U </dni>
+    <nom>Nora </nom>
+    <cognom1>West </cognom1>
+    <cognom2>Allen</cognom2>
+    <adreça>
+        <carrer>Carrer Major </carrer>
+        <numero>67 </numero>
+        <pis>4</pis>
+        <porta>3 </porta>
+    </adreça>
+    <telefon>
+        <fixe>123895438 </fixe>
+        <mobil>111222333 </mobil>
+        <opcional>No tinc</opcional>
+    </telefon>
+</persona>

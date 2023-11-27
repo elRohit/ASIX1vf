@@ -1,0 +1,11 @@
+<!ELEMENT cooperativa (soci+)>
+<!ELEMENT soci (identificador, nom, cognom+, (dataNaixement | edat)?, telefon+)>
+<!ELEMENT identificador ((numero, data) | clau)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT clau (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT dataNaixement (#PCDATA)>
+<!ELEMENT edat (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<capítol>
+  <titol xml:lang="ca">Títol en català</titol>
+  <titol xml:lang="es">Título en español</titol>
+  <titol xml:lang="en">Title in English</titol>
+  <paragraf xml:lang="ca">Paràgraf en català</paragraf>
+  <paragraf xml:lang="es">Párrafo en español</paragraf>
+  <paragraf xml:lang="en">Paragraph in English</paragraf>
+</capítol>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE classe SYSTEM "e5_classeRK.dtd">
+<classe>
+    <tutor>
+        <persona>
+            <NIF>12345678A</NIF>
+            <nom>Giovanni</nom>
+            <cognom>Rossi</cognom>
+            <telefon>123456789</telefon>
+            <correu>giovanni.rossi@example.com</correu>
+        </persona>
+    </tutor>
+    <alumne>
+        <persona>
+            <NIF>23456789B</NIF>
+            <nom>Giovanna</nom>
+            <cognom>Rossi</cognom>
+            <cognom>Smith</cognom>
+            <telefon>234567890</telefon>
+            <correu>giovanna.rossi@example.com</correu>
+        </persona>
+    </alumne>
+    <!-- Afegeix més elements aquí -->
+</classe>

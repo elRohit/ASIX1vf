@@ -1,0 +1,15 @@
+<!ELEMENT temporada (jornada+)>
+<!ATTLIST temporada any CDATA #REQUIRED>
+<!ELEMENT jornada (partit+)>
+<!ATTLIST jornada número CDATA #REQUIRED>
+<!ELEMENT partit (data,estadi,local,visitant,resultat,meteo?)>
+<!ATTLIST partit número CDATA #REQUIRED>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT estadi (#PCDATA)>
+<!ATTLIST estadi espectadors CDATA #REQUIRED>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT visitant (#PCDATA)>
+<!ELEMENT resultat (#PCDATA)>
+<!ATTLIST resultat local CDATA #REQUIRED>
+<!ATTLIST resultat visitant CDATA #REQUIRED>
+<!ELEMENT meteo (#PCDATA)>
