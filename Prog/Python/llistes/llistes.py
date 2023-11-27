@@ -47,6 +47,11 @@ for nom in reversed(llista):
     print(nom)
 
 
+print("\nConsumir llista en forma de cua:FIFO")
+while noms:
+    nom = llista.pop(0)
+    print(nom)
+
 '''
 llista = list
 noms = input("Introdueix una dada: ")
@@ -55,6 +60,3 @@ while noms != "":
     noms = input("Introdueix una dada: ")
 
 '''
-while noms:
-    nom = llista.pop(0)
-    print(nom)
