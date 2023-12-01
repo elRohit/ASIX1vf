@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comandes SYSTEM "a4_comandesRK.dtd">
+<comandes>
+    <comanda>
+        <capçalera>
+            <client codi="C1">
+                <nom>Client 1</nom>
+                <adreça>Adreça 1</adreça>
+                <població>Població 1</població>
+                <codi_postal>CP1</codi_postal>
+            </client>
+            <forma_de_pagament codi="FP1">
+                <descripció>Descripció 1</descripció>
+                <num_pagaments>1</num_pagaments>
+                <primer_dia>1</primer_dia>
+                <dies_entre_pagaments>30</dies_entre_pagaments>
+            </forma_de_pagament>
+            <comercial codi="CO1">
+                <nom>Comercial 1</nom>
+                <correu_electrònic>comercial1@example.com</correu_electrònic>
+                <mòbil>123456789</mòbil>
+            </comercial>
+            <data_comanda>
+                <dia>1</dia>
+                <mes>1</mes>
+                <any>2022</any>
+            </data_comanda>
+            <data_lliurament>
+                <dia>31</dia>
+                <mes>1</mes>
+                <any>2022</any>
+            </data_lliurament>
+        </capçalera>
+        <linies>
+            <linia número="L1">
+                <article codi="A1" unitats="Kg">
+                    <descripció>Article 1</descripció>
+                </article>
+                <quantitat>1</quantitat>
+                <preu_unitari>10</preu_unitari>
+                <descompte tipus="comercial">5</descompte>
+            </linia>
+            <linia número="L2">
+                <article codi="A2" unitats="Un">
+                    <descripció>Article 2</descripció>
+                </article>
+                <quantitat>2</quantitat>
+                <preu_unitari>20</preu_unitari>
+                <descompte tipus="pagament_immediat">10</descompte>
+            </linia>
+            <linia número="L3">
+                <article codi="A3" unitats="L">
+                    <descripció>Article 3</descripció>
+                </article>
+                <quantitat>3</quantitat>
+                <preu_unitari>30</preu_unitari>
+            </linia>
+        </linies>
+    </comanda>
+    <!-- Add more comanda elements here -->
+</comandes>

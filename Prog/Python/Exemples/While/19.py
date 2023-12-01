@@ -17,4 +17,3 @@ while intents > 0:
     intents -= 1
     print("Et queden " + str(intents) + " intents.")
 
-    
