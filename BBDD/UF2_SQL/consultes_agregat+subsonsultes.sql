@@ -190,7 +190,102 @@ JOIN store s ON st.store_id = s.store_id
 JOIN customer c ON c.store_id = s.store_id
 GROUP BY st.staff_id, st.last_name
 ORDER BY COUNT(c.customer_id) ASC;
-
+-- 15
 SELECT film_id, title, rental_duration
 FROM film 
 WHERE rental_rate = (SELECT MAX(rental_rate) FROM film)
+
+
+-- 16
+SELECT 
+    CASE 
+        WHEN EXTRACT(QUARTER FROM lower(rental_period)) = 1 THEN '1st Quarter'
+        WHEN EXTRACT(QUARTER FROM lower(rental_period)) = 2 THEN '2nd Quarter'
+        WHEN EXTRACT(QUARTER FROM lower(rental_period)) = 3 THEN '3rd Quarter'
+        WHEN EXTRACT(QUARTER FROM lower(rental_period)) = 4 THEN '4th Quarter'
+    END AS Quarter,
+    COUNT(*) AS Total_Rentals
+FROM rental
+WHERE EXTRACT(YEAR FROM upper(rental_period)) = 2005
+GROUP BY Quarter
+UNION ALL
+SELECT 'Total' AS Quarter, COUNT(*) AS Total_Rentals
+FROM rental
+WHERE EXTRACT(YEAR FROM upper(rental_period)) = 2005
+GROUP BY Quarter
+ORDER BY Quarter;
+
+select rental_period
+from rental
+where EXTRACT(YEAR FROM lower(rental_period)) = 2005
+
+
+--16.	Volem saber les pel·lícules (títol i nom de la categoria) de la categoria Drama que tenen un cost de substitució (replacement_cost) menor que alguna de les pel·lícules de la categoria “Classics”. (Utilitza l’operador ANY) 
+SELECT mov.title, cat.name
+FROM film mov
+JOIN film_category fc ON mov.film_id = fc.film_id
+JOIN category cat ON fc.category_id = cat.category_id
+WHERE cat.name = 'Drama' AND mov.replacement_cost < ANY(
+    SELECT mov2.replacement_cost
+    FROM film mov2
+    JOIN film_category fc2 ON mov2.film_id = fc2.film_id
+    JOIN category cat2 ON fc2.category_id = cat2.category_id
+    WHERE cat2.name = 'Classics'
+)
+
+
+SELECT mov.title, cat.name
+FROM film mov
+JOIN film_category fc ON mov.film_id = fc.film_id
+JOIN category cat ON fc.category_id = cat.category_id
+WHERE cat.name = 'Drama' 
+AND NOT EXISTS (
+    SELECT 1
+    FROM film mov2
+    JOIN film_category fc2 ON mov2.film_id = fc2.film_id
+    JOIN category cat2 ON fc2.category_id = cat2.category_id
+    WHERE cat2.name = 'Classics' AND mov2.replacement_cost <= mov.replacement_cost
+)
+
+
+
+SELECT i.inventory_id, f.title
+FROM inventory i
+JOIN film f ON i.film_id = f.film_id
+WHERE i.inventory_id NOT IN (
+    SELECT r.inventory_id
+    FROM rental r
+)
+
+SELECT DISTINCT a.actor_id, CONCAT(a.first_name, ' ', a.last_name) AS full_name
+FROM actor a
+JOIN film_actor fa ON a.actor_id = fa.actor_id
+JOIN film f ON fa.film_id = f.film_id
+WHERE f.replacement_cost = 9.99
+
+
+SELECT f.title, c.name, f.replacement_cost
+FROM film f
+JOIN film_category fc ON f.film_id = fc.film_id
+JOIN category c ON fc.category_id = c.category_id
+WHERE c.name = 'Drama' AND 
+f.replacement_cost < ANY (
+    SELECT f.replacement_cost
+    FROM film f
+    JOIN film_category fc ON f.film_id = fc.film_id
+    JOIN category c ON fc.category_id = c.category_id
+    WHERE c.name = 'Classics'
+    );
+
+SELECT * FROM crosstab(
+  'SELECT EXTRACT(QUARTER FROM rental_date)::integer, COUNT(*)
+   FROM rental
+   WHERE EXTRACT(YEAR FROM rental_date) = 2005
+   GROUP BY 1
+   ORDER BY 1',
+  'SELECT generate_series(1,4)'
+) AS ct ("Quarter" integer, "1st Quarter" integer, "2nd Quarter" integer, "3rd Quarter" integer, "4th Quarter" integer);
+
+SELECT COUNT(*) AS "Total Rentals"
+FROM rental
+WHERE EXTRACT(YEAR FROM lower(rental_period)) = 2005;

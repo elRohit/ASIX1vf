@@ -1,0 +1,37 @@
+﻿
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="escriptors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="escriptor" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cognoms" minOccurs="1" maxOccurs="2" type="xs:string"/>
+              <xs:element name="llengua" minOccurs="1" maxOccurs="unbounded" type="xs:string"/>
+              <xs:element name="premis" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="llibre_publicat">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="titol" type="xs:string"/>
+                      <xs:element name="data_publicacio" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="article_publicat">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="titol" type="xs:string"/>
+                      <xs:element name="data_publicacio" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="nom" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

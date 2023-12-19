@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<classe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a4_classeRK.xsd">
+    <alumne>
+        <nif>12345678A</nif>
+        <nom>John</nom>
+        <cognoms>Carlos</cognoms>
+    </alumne>
+    <alumne>
+        <nif>87654321B</nif>
+        <nom>Jana</nom>
+        <cognoms>Sanchez</cognoms>
+    </alumne>
+    <alumne>
+        <nif>98765432C</nif>
+        <nom>Cristina</nom>
+        <cognoms>Rodriguez</cognoms>
+    </alumne>
+    <alumne>
+        <nif>54321678D</nif>
+        <nom>Espinita</nom>
+        <cognoms>Kumar</cognoms>
+    </alumne>
+    <alumne>
+        <nif>87654321E</nif>
+        <nom>David</nom>
+        <cognoms>Gimeno</cognoms>
+    </alumne>
+    <tutor>
+        <nif>98765432F</nif>
+        <nom>Roberto</nom>
+        <cognoms>Gimenez</cognoms>
+    </tutor>
+</classe>

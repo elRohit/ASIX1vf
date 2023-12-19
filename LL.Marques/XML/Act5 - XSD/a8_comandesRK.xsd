@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="comandes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="comanda" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="capsalera">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="client">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nom" type="xs:string"/>
+                          <xs:element name="adresa" type="xs:string"/>
+                          <xs:element name="poblacio" type="xs:string"/>
+                          <xs:element name="codi_postal" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="codi" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="forma_de_pagament">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="descripcio" type="xs:string"/>
+                          <xs:element name="num_pagaments" type="xs:int"/>
+                          <xs:element name="primer_dia" type="xs:date"/>
+                          <xs:element name="dies_entre_pagaments" type="xs:int"/>
+                        </xs:sequence>
+                        <xs:attribute name="codi" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="comercial" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nom" type="xs:string"/>
+                          <xs:element name="correu_electronic" minOccurs="0" type="xs:string"/>
+                          <xs:element name="mobil" minOccurs="0" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="codi" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="data_comanda">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="dia" type="xs:int"/>
+                          <xs:element name="mes" type="xs:int"/>
+                          <xs:element name="any" type="xs:int"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="data_lliurament" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="dia" type="xs:int"/>
+                          <xs:element name="mes" type="xs:int"/>
+                          <xs:element name="any" type="xs:int"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="linies">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="linia" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="article">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="descripcio" type="xs:string"/>
+                              </xs:sequence>
+                              <xs:attribute name="codi" type="xs:string"/>
+                              <xs:attribute name="unitats" type="unitatsType" default="Un"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="quantitat" type="xs:int"/>
+                          <xs:element name="preu_unitari" type="xs:decimal"/>
+                          <xs:element name="descompte" minOccurs="0" maxOccurs="2">
+                            <xs:complexType>
+                              <xs:attribute name="tipus" type="tipusType"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="xs:int"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="unitatsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Kg"/>
+      <xs:enumeration value="Un"/>
+      <xs:enumeration value="L"/>
+      <xs:enumeration value="m"/>
+      <xs:enumeration value="m2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="comercial"/>
+      <xs:enumeration value="pagament_immediat"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

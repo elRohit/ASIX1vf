@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE comandes SYSTEM "a4_comandesRK.dtd">
-<comandes>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<comandes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a4_comandesRK.xsd">
     <comanda>
         <capsalera>
             <client codi="C1">
@@ -54,6 +53,7 @@
                 </article>
                 <quantitat>3</quantitat> <!--Quantitat de l'article-->
                 <preu_unitari>30</preu_unitari> <!--Preu unitari de l'article--> 
+                <descompte>20</descompte>
             </linia>
         </linies>
     </comanda>

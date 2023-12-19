@@ -1,0 +1,33 @@
+{
+    "monitors": {
+       "monitor": [
+          {
+             "brand": "Samsung",
+             "size": "21.5",
+             "ratio": "16:9",
+             "maxresolution": "1920x1080",
+             "launchDate": "2011-01-01",
+             "feature": [
+                "Ultrafast 5ms response time",
+                "VGA and HDMI inputs"
+             ],
+             "price": "140",
+             "_type": "LED",
+             "_modelNo": "S22C300HS"
+          },
+          {
+             "brand": "Dell",
+             "size": "27",
+             "ratio": "16:9",
+             "maxresolution": "2560x1440",
+             "launchDate": "2013-09-01",
+             "feature": [
+                "VGA, HDMI and DVI-D with HDCP inputs"
+             ],
+             "price": "639",
+             "_type": "LEDHD",
+             "_modelNo": "U2713HM"
+          }
+       ]
+    }
+ }

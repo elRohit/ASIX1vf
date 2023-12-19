@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<comandes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a8_comandesRK.xsd">
+  <comanda>
+    <capsalera>
+      <client codi="C001">
+        <nom>Client 1</nom>
+        <adresa>Adreça 1</adresa>
+        <poblacio>Població 1</poblacio>
+        <codi_postal>CP001</codi_postal>
+      </client>
+      <forma_de_pagament codi="FP001">
+        <descripcio>Descripció 1</descripcio>
+        <num_pagaments>1</num_pagaments>
+        <primer_dia>2022-01-01</primer_dia>
+        <dies_entre_pagaments>30</dies_entre_pagaments>
+      </forma_de_pagament>
+      <comercial codi="COM001">
+        <nom>Comercial 1</nom>
+        <correu_electronic>comercial1@example.com</correu_electronic>
+        <mobil>1234567890</mobil>
+      </comercial>
+      <data_comanda>
+        <dia>1</dia>
+        <mes>1</mes>
+        <any>2022</any>
+      </data_comanda>
+      <data_lliurament>
+        <dia>10</dia>
+        <mes>1</mes>
+        <any>2022</any>
+      </data_lliurament>
+      <data_lliurament>
+        <dia>20</dia>
+        <mes>1</mes>
+        <any>2022</any>
+      </data_lliurament>
+    </capsalera>
+    <linies>
+      <linia numero="1">
+        <article codi="A001" unitats="Kg">
+          <descripcio>Article 1</descripcio>
+        </article>
+        <quantitat>2</quantitat>
+        <preu_unitari>10.5</preu_unitari>
+        <descompte tipus="comercial"/>
+      </linia>
+      <linia numero="2">
+        <article codi="A002" unitats="Un">
+          <descripcio>Article 2</descripcio>
+        </article>
+        <quantitat>5</quantitat>
+        <preu_unitari>2.99</preu_unitari>
+      </linia>
+      <linia numero="3">
+        <article codi="A003" unitats="L">
+          <descripcio>Article 3</descripcio>
+        </article>
+        <quantitat>1</quantitat>
+        <preu_unitari>5.75</preu_unitari>
+        <descompte tipus="pagament_immediat"/>
+      </linia>
+    </linies>
+  </comanda>
+  <comanda>
+    <capsalera>
+      <client codi="C002">
+        <nom>Client 2</nom>
+        <adresa>Adreça 2</adresa>
+        <poblacio>Població 2</poblacio>
+        <codi_postal>CP002</codi_postal>
+      </client>
+      <forma_de_pagament codi="FP002">
+        <descripcio>Descripció 2</descripcio>
+        <num_pagaments>2</num_pagaments>
+        <primer_dia>2022-02-01</primer_dia>
+        <dies_entre_pagaments>15</dies_entre_pagaments>
+      </forma_de_pagament>
+      <comercial codi="COM002">
+        <nom>Comercial 2</nom>
+        <correu_electronic>comercial2@example.com</correu_electronic>
+        <mobil>9876543210</mobil>
+      </comercial>
+      <data_comanda>
+        <dia>2</dia>
+        <mes>2</mes>
+        <any>2022</any>
+      </data_comanda>
+      <data_lliurament>
+        <dia>15</dia>
+        <mes>2</mes>
+        <any>2022</any>
+      </data_lliurament>
+    </capsalera>
+    <linies>
+      <linia numero="1">
+        <article codi="A004" unitats="m2">
+          <descripcio>Article 4</descripcio>
+        </article>
+        <quantitat>3</quantitat>
+        <preu_unitari>8.99</preu_unitari>
+      </linia>
+      <linia numero="2">
+        <article codi="A005" unitats="Un">
+          <descripcio>Article 5</descripcio>
+        </article>
+        <quantitat>10</quantitat>
+        <preu_unitari>1.5</preu_unitari>
+      </linia>
+      <linia numero="3">
+        <article codi="A006" unitats="Kg">
+          <descripcio>Article 6</descripcio>
+        </article>
+        <quantitat>2</quantitat>
+        <preu_unitari>6.25</preu_unitari>
+        <descompte tipus="comercial"/>
+        <descompte tipus="pagament_immediat"/>
+      </linia>
+    </linies>
+  </comanda>
+</comandes>

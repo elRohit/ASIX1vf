@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <temporada xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" any="2020" xsi:noNamespaceSchemaLocation="a1_temporadaRK.xsd">
+    <jornada numero="1">
+      <partit numero="1">
+        <data>05-02-2020</data>
+        <estadi espectadors="67000">Twickenham</estadi>
+        <local>Anglaterra</local>
+        <visitant>Escòcia</visitant>
+        <resultat local="34" visitant="34"/>
+        <meteo>sol</meteo>
+      </partit>
+      <partit numero="7">
+        <data>05-02-2020</data>
+        <estadi espectadors="11111">Millenium</estadi>
+        <local>Gales</local>
+        <visitant>Irlanda</visitant>
+        <resultat local="24" visitant="16"/>
+      </partit>
+    </jornada>
+    <jornada numero="2">
+      <partit numero="1">
+        <data>12-02-2020</data>
+        <estadi espectadors="58000">Lansdowne Road</estadi>
+        <local>Irlanda</local>
+        <visitant>Itàlia</visitant>
+        <resultat local="43" visitant="3"/>
+        <meteo>vent</meteo>
+      </partit>
+      <partit numero="3">
+        <data>12-02-2020</data>
+        <estadi espectadors="42000">Murrayfield</estadi>
+        <local>Escòcia</local>
+        <visitant>França</visitant>
+        <resultat local="12" visitant="14"/>
+      </partit>
+    </jornada>
+  </temporada>

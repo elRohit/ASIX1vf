@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="NIF" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="nom" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="cognom1" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="cognom2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

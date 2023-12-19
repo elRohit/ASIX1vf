@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE comandes SYSTEM "a3_comandesRK.dtd">
+ï»¿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Aquest fitxer XML conté una estructura de dades que representa comandes i articles associats a diferents sucursals.
-    Les comandes estan organitzades en una estructura jeràrquica, amb nodes per als articles i les sucursals.
-    Cada article té un nom i un model amb una referència i un tipus.
-    Cada sucursal té un codi, una adreça, un treballador responsable, una data i una llista d'articles associats.
-    Cada article associat a una sucursal té un codi, un nombre d'unitats, un preu i una data de termini.
+    Aquest fitxer XML contï¿½ una estructura de dades que representa comandes i articles associats a diferents sucursals.
+    Les comandes estan organitzades en una estructura jerï¿½rquica, amb nodes per als articles i les sucursals.
+    Cada article tï¿½ un nom i un model amb una referï¿½ncia i un tipus.
+    Cada sucursal tï¿½ un codi, una adreï¿½a, un treballador responsable, una data i una llista d'articles associats.
+    Cada article associat a una sucursal tï¿½ un codi, un nombre d'unitats, un preu i una data de termini.
 -->
-<comandes>
+<comandes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a3_comandesRK.xsd">
     <articles>
         <article>
             <nom>A</nom>
@@ -27,8 +26,8 @@
         </article>
     </articles>
     <sucursal codi="_5">
-        <adreça>Carrer Vilar Petit</adreça>
-        <treballador>Cristina Rodríguez</treballador>
+        <adresa>Carrer Vilar Petit</adresa>
+        <treballador>Cristina Rodriguez</treballador>
         <data>2022-01-01</data>
         <nomarticle codi="_5">
             <unitats>10</unitats>
@@ -47,7 +46,7 @@
         </nomarticle>
     </sucursal>
     <sucursal codi="_9">
-        <adreça>Carrrer Vilar Gran</adreça>
+        <adresa>Carrrer Vilar Gran</adresa>
         <treballador>Rohit Kumar</treballador>
         <data>2022-02-01</data>
         <nomarticle codi="_9">
@@ -67,8 +66,8 @@
         </nomarticle>
     </sucursal>
     <sucursal codi="_14">
-        <adreça>Adreça 3</adreça>
-        <treballador>Cristina Rodríguez</treballador>
+        <adresa>Adresa 3</adresa>
+        <treballador>Cristina Rodrï¿½guez</treballador>
         <data>2022-03-01</data>
         <nomarticle codi="_14">
             <unitats>20</unitats>

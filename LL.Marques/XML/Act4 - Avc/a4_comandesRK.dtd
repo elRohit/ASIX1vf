@@ -1,32 +1,32 @@
 <!ELEMENT comandes (comanda+)>
-<!ELEMENT comanda (capçalera,linies)>
-<!ELEMENT capçalera (client,forma_de_pagament,comercial?,data_comanda,data_lliurament*)>
-<!ELEMENT client (nom,adreça,població,codi_postal)>
+<!ELEMENT comanda (capsalera,linies)>
+<!ELEMENT capsalera (client,forma_de_pagament,comercial?,data_comanda,data_lliurament*)>
+<!ELEMENT client (nom,adresa,poblacio,codi_postal)>
 <!ATTLIST client codi ID #REQUIRED>
-<!ELEMENT forma_de_pagament (descripció,num_pagaments,primer_dia,dies_entre_pagaments)>
+<!ELEMENT forma_de_pagament (descripcio,num_pagaments,primer_dia,dies_entre_pagaments)>
 <!ATTLIST forma_de_pagament codi ID #REQUIRED>
-<!ELEMENT comercial (nom,correu_electrònic?,mòbil?)>
+<!ELEMENT comercial (nom,correu_electronic?,mobil?)>
 <!ATTLIST comercial codi ID #REQUIRED>
 <!ELEMENT data_comanda (dia,mes,any)>
 <!ELEMENT data_lliurament (dia,mes,any)*>
 <!ELEMENT linies (linia+)>
 <!ELEMENT linia (article,quantitat,preu_unitari,descompte*)>
-<!ATTLIST linia número ID #REQUIRED>
-<!ELEMENT article (descripció)>
+<!ATTLIST linia numero ID #REQUIRED>
+<!ELEMENT article (descripcio)>
 <!ATTLIST article codi ID #REQUIRED>
 <!ATTLIST article unitats (Kg | Un | L | m | m2) "Un">
 <!ELEMENT descompte (#PCDATA)>
 <!ATTLIST descompte tipus (comercial | pagament_immediat) #REQUIRED>
 <!ELEMENT nom (#PCDATA)>
-<!ELEMENT adreça (#PCDATA)>
-<!ELEMENT població (#PCDATA)>
+<!ELEMENT adresa (#PCDATA)>
+<!ELEMENT poblacio (#PCDATA)>
 <!ELEMENT codi_postal (#PCDATA)>
-<!ELEMENT descripció (#PCDATA)>
+<!ELEMENT descripcio (#PCDATA)>
 <!ELEMENT num_pagaments (#PCDATA)>
 <!ELEMENT primer_dia (#PCDATA)>
 <!ELEMENT dies_entre_pagaments (#PCDATA)>
-<!ELEMENT correu_electrònic (#PCDATA)>
-<!ELEMENT mòbil (#PCDATA)>
+<!ELEMENT correu_electronic (#PCDATA)>
+<!ELEMENT mobil (#PCDATA)>
 <!ELEMENT dia (#PCDATA)>
 <!ELEMENT mes (#PCDATA)>
 <!ELEMENT any (#PCDATA)>
