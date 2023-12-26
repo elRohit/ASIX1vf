@@ -1,0 +1,52 @@
+{
+    "gossos": [
+        {
+            "nom": "Rex",
+            "codi_identificacio": "ID001",
+            "data_naixement": "2015-05-01",
+            "raca": "Labrador",
+            "pares": {
+                "codi_pare": "ID100",
+                "codi_mare": "ID101"
+            },
+            "constitucio": {
+                "alcada": 60,
+                "pes": 30
+            },
+            "historial_medic": [
+                {
+                    "data": "2020-01-01",
+                    "descripcio": "Vacuna anual"
+                },
+                {
+                    "data": "2020-06-01",
+                    "descripcio": "Revisió general"
+                }
+            ]
+        },
+        {
+            "nom": "Luna",
+            "codi_identificacio": "ID002",
+            "data_naixement": "2017-03-15",
+            "raca": "Beagle",
+            "pares": {
+                "codi_pare": "ID200",
+                "codi_mare": null
+            },
+            "constitucio": {
+                "alcada": 40,
+                "pes": 20
+            },
+            "historial_medic": [
+                {
+                    "data": "2020-02-01",
+                    "descripcio": "Vacuna anual"
+                },
+                {
+                    "data": "2020-07-01",
+                    "descripcio": "Revisió general"
+                }
+            ]
+        }
+    ]
+}

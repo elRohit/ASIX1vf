@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "monitors": {
+            "type": "object",
+            "properties": {
+                "monitor": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "brand": {"type": "string"},
+                            "size": {
+                                "type": "number",
+                                "minimum": 15.6,
+                                "maximum": 27
+                            },
+                            "ratio": {
+                                "type": "string",
+                                "enum": ["4:3", "16:9"]
+                            },
+                            "maxresolution": {
+                                "type": "string",
+                                "pattern": "^\\d{3,4}x\\d{3,4}$"
+                            },
+                            "launchDate": {"type": "string"},
+                            "feature": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                                "minItems": 1,
+                                "maxItems": 3
+                            },
+                            "price": {
+                                "type": "object",
+                                "properties": {
+                                    "currency": {
+                                        "type": "string",
+                                        "default": "USD"
+                                    },
+                                    "value": {
+                                        "type": "number"
+                                    }
+                                },
+                                "required": ["currency", "value"]
+                            },
+                            "_type": {
+                                "type": "string",
+                                "enum": ["LED", "LCD", "LEDHD"]
+                            },
+                            "_modelNo": {
+                                "type": "string",
+                                "minLength": 5,
+                                "maxLength": 10,
+                                "pattern": "^[A-Z0-9]+$"
+                            }
+                        },
+                        "required": ["brand", "size", "ratio", "maxresolution", "launchDate", "feature", "price", "_type", "_modelNo"]
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": ["monitor"]
+        }
+    },
+    "required": ["monitors"]
+}

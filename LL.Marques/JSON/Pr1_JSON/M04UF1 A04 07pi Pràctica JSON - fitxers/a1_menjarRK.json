@@ -1,0 +1,11 @@
+{
+    "elements": 
+    [
+      {"nom":"Poma","quantitat":10, "tipus":"fruita"},
+      {"nom":"Pera","quantitat":20, "tipus":"fruita"},
+      {"nom":"Taronja","quantitat":30, "tipus":"fruita"},
+      {"nom":"Enciam","quantitat":80, "tipus":"verdura"},
+      {"nom":"Tomàquet","quantitat":15, "tipus":"verdura"},
+      {"nom":"Cogombre","quantitat":50, "tipus":"verdura"}
+    ]
+  }

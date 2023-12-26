@@ -6,10 +6,10 @@
 ********************************** --> Eliminar la bbdd si existeix  <-- ***************************************
 *********************************************************************************************************************
 *********************************************************************************************************************
-*/
+*//*
 DROP DATABASE IF EXISTS supermercats;
 CREATE DATABASE supermercats;
-/*
+
 *********************************************************************************************************************
 *********************************************************************************************************************
 ********************************** --> Eliminar les taules si existeixen  <-- ***************************************
@@ -55,6 +55,7 @@ END $$;*/
 ***************************************** --> Creació de les taules  <-- ********************************************
 *********************************************************************************************************************
 *********************************************************************************************************************
+CORRECTE
 */
 
 -- Taula SUPERMERCAT
@@ -130,6 +131,7 @@ CREATE TABLE client (
     num_targeta VARCHAR(20) NOT NULL
 );
 -- Taula TIQUET
+DROP TABLE IF EXISTS tiquet CASCADE;
 CREATE TABLE tiquet (
     id_tiquet SERIAL PRIMARY KEY,
     data_hora TIMESTAMP NOT NULL,
@@ -137,8 +139,8 @@ CREATE TABLE tiquet (
     num_caixa INT NOT NULL,
     dni_client VARCHAR(20),
     descompte DECIMAL(5, 2) CHECK (descompte >= 0 AND descompte <= 1) NOT NULL,
-    FOREIGN KEY (codi_super, num_caixa) REFERENCES caixa(codi_super, num_caixa),
-    FOREIGN KEY (dni_client) REFERENCES client(dni_client)
+    CONSTRAINT fk_tiquet_caixa FOREIGN KEY (codi_super, num_caixa) REFERENCES caixa(codi_super, num_caixa),
+    CONSTRAINT fk_tiquet_client FOREIGN KEY (dni_client) REFERENCES client(dni_client)
 );
 -- Taula DETALL_TICKET(N:M --> tiquet-producte)
 CREATE TABLE detall_tiquet (
@@ -153,13 +155,13 @@ CREATE TABLE detall_tiquet (
 
 
 -- Afegir dades a les taules
-BEGIN TRANSACTION;
+SELECT * FROM empleat;
 
 INSERT INTO supermercat (nom_super, adreça_carrer, adreça_codipostal, adreça_poblacio, nif_director)
 VALUES ('Supeco', 'Carrer Major 15', '17300', 'Blanes', '12345678A'),
        ('Mercadona', 'Carrer Aribau 15', '17310', 'Lloret de Mar', '87654321B');
 
---SELECT * FROM empleat;
+--SELECT * FROM proveidor;
 
 INSERT INTO empleat (nif, nom_treballador, primer_cognom, segon_cognom, codi_super)
 VALUES ('11111111A', 'Ricard', 'Pérez', 'Osorio', 2),
@@ -222,11 +224,11 @@ VALUES (1, 1, '2022-01-01'),
        (1, 4, '2022-01-04');
 
 INSERT INTO client (dni_client, nom, cognoms, telefon, data_naixement, num_targeta)
-VALUES ('11111111A', 'Client 1', 'Cognom1', '123456789', '2000-01-01', '1111111111111111'),
-       ('22222222B', 'Client 2', 'Cognom2', '987654321', '2000-02-02', '2222222222222222'),
-       ('33333333C', 'Client 3', 'Cognom3', '111111111', '2000-03-03', '3333333333333333'),
-       ('44444444D', 'Client 4', 'Cognom4', '999999999', '2000-04-04', '4444444444444444'),
-       ('55555555E', 'Client 5', 'Cognom5', '555555555', '2000-05-05', '5555555555555555');
+VALUES ('11111111A', 'Lukas', 'Empollon', '123456789', '2000-01-01', '1111111111111111'),
+       ('22222222B', 'Alejandro', 'Pretel', '987654321', '2000-02-02', '2222222222222222'),
+       ('33333333C', 'Rodrigo', 'González', '111111111', '2000-03-03', '3333333333333333'),
+       ('44444444D', 'Joan', 'Almirall', '999999999', '2000-04-04', '4444444444444444'),
+       ('55555555E', 'Mongola', 'Kaur', '555555555', '2000-05-05', '5555555555555555');
 
 INSERT INTO tiquet (data_hora, codi_super, num_caixa, dni_client, descompte)
 VALUES ('2022-01-01 10:00:00', 1, 1, '11111111A', 0.1),
@@ -252,7 +254,10 @@ VALUES (1, 1, 10.99, 2),
        (5, 4, 8.99, 1),
        (5, 5, 3.99, 2);
 
-COMMIT;
+
+
+
+-- UPDATE, DELETE, INSERT
 
 UPDATE tiquet
 SET num_caixa = 2
