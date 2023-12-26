@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE classe SYSTEM "e4_classeRK.dtd">
+<classe>
+    <alumne>
+        <!-- Alumne 1 -->
+        <NIF>12345678A</NIF>
+        <nom>João</nom>
+        <cognom>Silva</cognom>
+    </alumne>
+    <alumne>
+        <!-- Alumne 2 -->
+        <NIF>23456789B</NIF>
+        <nom>Juan</nom>
+        <cognom>Pérez</cognom>
+        <cognom>Gómez</cognom>
+    </alumne>
+    <alumne>
+        <!-- Alumne 3 -->
+        <NIF>34567890C</NIF>
+        <nom>John</nom>
+        <cognom>Smith</cognom>
+    </alumne>
+    <alumne>
+        <!-- Alumne 4 -->
+        <NIF>45678901D</NIF>
+        <nom>Anna</nom>
+        <cognom>Miller</cognom>
+    </alumne>
+    <alumne>
+        <!-- Alumne 5 -->
+        <NIF>56789012E</NIF>
+        <nom>Klaus</nom>
+        <cognom>Schmidt</cognom>
+    </alumne>
+</classe>

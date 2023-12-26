@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a3_personaRK.xsd">
+    <NIF>12345678A</NIF>
+    <nom>Rohit</nom>
+    <cognom>Kumar</cognom>
+    <telefon>123456789</telefon>
+    <email>rohit.kumar@gmail.com</email>
+    <genere>home</genere>
+</persona>

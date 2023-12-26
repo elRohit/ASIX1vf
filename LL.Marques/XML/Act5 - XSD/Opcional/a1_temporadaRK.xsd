@@ -1,0 +1,37 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="temporada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="jornada" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="partit" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="data" type="xs:string"/>
+                    <xs:element name="estadi" type="xs:string">
+                      <xs:complexType>
+                        <xs:attribute name="espectadors" type="xs:integer" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="local" type="xs:string"/>
+                    <xs:element name="visitant" type="xs:string"/>
+                    <xs:element name="resultat">
+                      <xs:complexType>
+                        <xs:attribute name="local" type="xs:integer" use="required"/>
+                        <xs:attribute name="visitant" type="xs:integer" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="numero" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="any" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

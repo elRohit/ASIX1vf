@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE persona SYSTEM "e3_personaRK.dtd">
+<persona>
+    <!-- NIF de la persona -->
+    <NIF>12345678A</NIF>
+    <!-- Nom de la persona -->
+    <nom>Pepe</nom>
+    <cognoms>
+        <!-- Cognom de la persona -->
+        <cognom>Santos Gamba</cognom>
+    </cognoms>
+    <telefons>
+        <!-- Telèfon de la persona -->
+        <telefon>123456789</telefon>
+    </telefons>
+    <correus>
+        <!-- Correu electrònic de la persona -->
+        <correu>pepe.santos@gmail.com</correu>
+    </correus>
+    <!-- Sexe de la persona -->
+    <sexe>M</sexe>
+</persona>

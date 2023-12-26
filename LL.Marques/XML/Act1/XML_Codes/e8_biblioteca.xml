@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca>
+<llibres>
+<llibre>
+   <titol>Harry Potter - 1 </titol>
+    <autor>Dios todo poderoso </autor>
+    <editorial>Yo</editorial>
+    <isbn>1234 5678 9111 1113 </isbn>
+</llibre>
+<llibre>
+    <titol>Harry Potter - 2  </titol>
+    <autor>Dios todo poderoso </autor>
+    <editorial>Yo</editorial>
+    <isbn>1234 5678 9111 1213 </isbn>
+</llibre>
+<llibre>
+    <titol>Harry Potter - 3  </titol>
+    <autor>Dios todo poderoso </autor>
+    <editorial>Yo</editorial>
+    <isbn>1234 5678 9111 1313 </isbn>
+</llibre>
+<llibre>
+   <titol>Harry Potter - 4  </titol>
+    <autor>Dios todo poderoso </autor>
+    <editorial>Yo</editorial>
+    <isbn>1234 5678 9111 1413 </isbn>
+</llibre>
+<llibre>
+   <titol>Harry Potter- 5 </titol>
+    <autor>Dios todo poderoso </autor>
+    <editorial>Yo</editorial>
+    <isbn>1234 5678 9111 1513 </isbn>
+</llibre>
+</llibres>
+</biblioteca>

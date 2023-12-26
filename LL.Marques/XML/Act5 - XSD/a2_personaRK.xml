@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a2_personaRK.xsd" genere="home">
+    <nif>12345678A</nif>
+    <nom>Joan</nom>
+    <cognoms>Pérez Gimeno</cognoms>
+    <telefons>
+        <telefon>123456789</telefon>
+        <telefon>987654321</telefon>
+    </telefons>
+    </persona>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Define the person element -->
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- NIF element (mandatory) -->
+                <xs:element name="NIF" type="xs:string"/>
+                <!-- Name element (mandatory) -->
+                <xs:element name="nom" type="xs:string"/>
+                <!-- Surname element (1 or more) -->
+                <xs:element name="cognom" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                <!-- Telephone element (0 or more) -->
+                <xs:element name="telefon" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- Email element (0 or more) -->
+                <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <!-- Gender element (optional) -->
+                <xs:element name="genere" type="xs:string" minOccurs="0" maxOccurs="1" />
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

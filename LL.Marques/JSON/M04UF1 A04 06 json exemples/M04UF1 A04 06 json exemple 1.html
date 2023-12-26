@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Exemple de lectura d'un objecte JSON amb javascript</title>
+	<script type="text/javascript">
+		var JSONObject = [
+		{
+			"titol": "La plaça del Diamant",
+			"autor": {
+			"dataNaixement": "10/10/1908",
+			"nom": "Mercè Rodoreda"
+		},
+		"dataPublicacio": "1962"
+		},
+		{
+			"titol": "1984",
+			"autor": {
+			"dataNaixement": "25/06/1903",
+			"nom": "George Orwell"
+		},
+		"dataPublicacio": "1947"
+		},
+		{
+			"titol": "El jardí oblidat",
+			"autor": {
+			"dataNaixement": "28/03/1976",
+			"nom": "Kate Morton"
+		},
+		"dataPublicacio": "2010"
+		}
+		];
+	</script>
+</head>
+<body>
+	<h2>Llistat de llibres JSON</h2>
+	<script type="text/javascript">
+		document.write("<ul>");
+		for(var i in JSONObject){
+			var cad = JSONObject[i].titol + ", " +
+			JSONObject[i].autor.dataNaixement + ", " +
+			JSONObject[i].autor.nom + ", " +
+			JSONObject[i].dataPublicacio;
+			
+			document.write("<li>" + cad + "</li>");
+		}
+		document.write("</ul>");
+	</script>
+</body>
+</html>

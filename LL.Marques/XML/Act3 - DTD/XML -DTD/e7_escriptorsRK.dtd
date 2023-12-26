@@ -1,0 +1,10 @@
+<!ELEMENT escriptors (escriptor+)>
+<!ELEMENT escriptor (nom, cognom+, llengua+, premi*, obra*)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT llengua (#PCDATA)>
+<!ELEMENT premi (#PCDATA)>
+<!ELEMENT obra ((llibre, data) | article)>
+<!ELEMENT llibre (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT article (#PCDATA)>

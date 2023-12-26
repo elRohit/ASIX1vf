@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<escriptors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a7_escriptorsRK.xsd">
+    <escriptor nom="J.K. Rowling">
+        <cognoms>Rowling</cognoms>
+        <llengua>Espanyol</llengua>
+        <llengua>Anglès</llengua>
+        <premis>Premi Nobel de Literatura</premis>
+        <llibre_publicat>
+            <titol>Harry Potter i la pedra filosofal</titol>
+            <data_publicacio>1997</data_publicacio>
+        </llibre_publicat>
+        <article_publicat>
+            <titol>El poder de la imaginació</titol>
+            <data_publicacio>2005</data_publicacio>
+        </article_publicat>
+    </escriptor>
+    <escriptor nom="Gabriel García Márquez">
+        <cognoms>García Márquez</cognoms>
+        <llengua>Espanyol</llengua>
+        <llengua>Francès</llengua>
+        <premis>Premi Nobel de Literatura</premis>
+        <llibre_publicat>
+            <titol>Cien años de soledad</titol>
+            <data_publicacio>1967</data_publicacio>
+        </llibre_publicat>
+    </escriptor>
+    <escriptor nom="Haruki Murakami">
+        <cognoms>Murakami</cognoms>
+        <llengua>Japonès</llengua>
+        <premis>Premi Franz Kafka</premis>
+        <premis>Premi Jerusal·lem</premis>
+        <llibre_publicat>
+            <titol>1Q84</titol>
+            <data_publicacio>2009</data_publicacio>
+        </llibre_publicat>
+        <llibre_publicat>
+            <titol>Kafka a la platja</titol>
+            <data_publicacio>2002</data_publicacio>
+        </llibre_publicat>
+    </escriptor>
+    <escriptor nom="Isabel Allende">
+        <cognoms>Allende</cognoms>
+        <llengua>Espanyol</llengua>
+        <llengua>Anglès</llengua>
+        <premis>Premi Nacional de Literatura de Xile</premis>
+        <premis>Premi Internacional de Novel·la Rómàntica Corazón de Oro</premis>
+        <llibre_publicat>
+            <titol>La casa de los espíritus</titol>
+            <data_publicacio>1982</data_publicacio>
+        </llibre_publicat>
+        <llibre_publicat>
+            <titol>Paula</titol>
+            <data_publicacio>1994</data_publicacio>
+        </llibre_publicat>
+        <article_publicat>
+            <titol>El poder de la imaginació</titol>
+            <data_publicacio>2005</data_publicacio>
+        </article_publicat>
+    </escriptor>
+    <escriptor nom="Paulo Coelho">
+        <cognoms>Coelho</cognoms>
+        <llengua>Portuguès</llengua>
+        <premis>Premi Crystal Award</premis>
+        <premis>Premi Golden Book</premis>
+        <premis>Premi Golden Book</premis>
+        <premis>Premi Golden Book</premis>
+        <llibre_publicat>
+            <titol>El Alquimista</titol>
+            <data_publicacio>1988</data_publicacio>
+        </llibre_publicat>
+        <llibre_publicat>
+            <titol>Brida</titol>
+            <data_publicacio>1990</data_publicacio>
+        </llibre_publicat>
+        <llibre_publicat>
+            <titol>Onze Minuts</titol>
+            <data_publicacio>2003</data_publicacio>
+        </llibre_publicat>
+    </escriptor>
+</escriptors>

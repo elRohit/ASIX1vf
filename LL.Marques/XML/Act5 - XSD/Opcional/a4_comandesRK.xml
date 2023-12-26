@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<comandes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a4_comandesRK.xsd">
+    <comanda>
+        <capsalera>
+            <client codi="C1">
+                <nom>Client 1</nom> <!-- Nom del client-->
+                <adresa>Adreça 1</adresa> <!-- Adreça del client -->
+                <poblacio>Població 1</poblacio> <!--Població del client--> 
+                <codi_postal>CP1</codi_postal> <!--Codi postal del client--> 
+            </client>
+            <forma_de_pagament codi="FP1">
+                <descripcio>Descripció 1</descripcio> <!--Descripció de la forma de pagament-->
+                <num_pagaments>1</num_pagaments> <!--Nombre de pagaments--> 
+                <primer_dia>1</primer_dia> <!--Primer dia de pagament--> 
+                <dies_entre_pagaments>30</dies_entre_pagaments> <!--Dies entre pagaments-->
+            </forma_de_pagament>
+            <comercial codi="CO1">
+                <nom>Comercial 1</nom> <!-- Nom del comercial-->
+                <correu_electronic>comercial1@gmail.com</correu_electronic> <!--Correu electrònic del comercial--> 
+                <mobil>123456789</mobil> <!--Mòbil del comercial--> 
+            </comercial>
+            <data_comanda>
+                <dia>1</dia> <!--Dia de la comanda--> 
+                <mes>1</mes> <!-- Mes de la comanda-->
+                <any>2022</any> <!--Any de la comanda--> 
+            </data_comanda>
+            <data_lliurament>
+                <dia>31</dia> <!--Dia de lliurament--> 
+                <mes>1</mes> <!--Mes de lliurament--> 
+                <any>2022</any> <!--Any de lliurament--> 
+            </data_lliurament>
+        </capsalera>
+        <linies>
+            <linia numero="L1">
+                <article codi="A1" unitats="Kg">
+                    <descripcio>Article 1</descripcio> <!--Descripció de l'article--> 
+                </article>
+                <quantitat>1</quantitat> <!--Quantitat de l'article-->
+                <preu_unitari>10</preu_unitari> <!--Preu unitari de l'article--> 
+                <descompte tipus="comercial">5</descompte> <!--Descompte de tipus comercial--> 
+            </linia>
+            <linia numero="L2">
+                <article codi="A2" unitats="Un">
+                    <descripcio>Article 2</descripcio> <!--Descripció de l'article--> 
+                </article>
+                <quantitat>2</quantitat><!--Quantitat de l'article-->
+                <preu_unitari>20</preu_unitari>  <!--Preu unitari de l'article--> 
+                <descompte tipus="pagament_immediat">10</descompte> <!--Descompte de tipus pagament immediat-->
+            </linia>
+            <linia numero="L3">
+                <article codi="A3" unitats="L">
+                    <descripcio>Article 3</descripcio> <!--Descripció de l'article--> 
+                </article>
+                <quantitat>3</quantitat> <!--Quantitat de l'article-->
+                <preu_unitari>30</preu_unitari> <!--Preu unitari de l'article--> 
+                <descompte>20</descompte>
+            </linia>
+        </linies>
+    </comanda>
+    <!-- Add more comanda elements here -->
+</comandes>

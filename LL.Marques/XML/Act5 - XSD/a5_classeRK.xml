@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<classe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a5_classeRK.xsd">
+<alumnes>
+    <alumne>
+        <nif>12345678A</nif>
+        <nom>John</nom>
+        <cognoms>Doe</cognoms>
+        <telefons>
+            <telefon>123456789</telefon>
+        </telefons>
+        <correus>
+            <correu>john.doe@example.com</correu>
+        </correus>
+    </alumne>
+    <alumne>
+        <nif>98765432B</nif>
+        <nom>Jane</nom>
+        <cognoms>Smith</cognoms>
+        <telefons>
+            <telefon>987654321</telefon>
+        </telefons>
+        <correus>
+            <correu>jane.smith@example.com</correu>
+        </correus>
+    </alumne>
+    <alumne>
+        <nif>56789012C</nif>
+        <nom>Michael</nom>
+        <cognoms>Johnson</cognoms>
+        <telefons>
+            <telefon>567890123</telefon>
+        </telefons>
+        <correus>
+            <correu>michael.johnson@example.com</correu>
+        </correus>
+    </alumne>
+    <alumne>
+        <nif>90123456D</nif>
+        <nom>Sarah</nom>
+        <cognoms>Williams</cognoms>
+        <telefons>
+            <telefon>901234567</telefon>
+        </telefons>
+        <correus>
+            <correu>sarah.williams@example.com</correu>
+        </correus>
+    </alumne>
+    <alumne>
+        <nif>34567890E</nif>
+        <nom>David</nom>
+        <cognoms>Brown</cognoms>
+        <telefons>
+            <telefon>345678901</telefon>
+        </telefons>
+        <correus>
+            <correu>david.brown@example.com</correu>
+        </correus>
+    </alumne>
+</alumnes>
+<tutor>
+    <nif>11223344F</nif>
+    <nom>Robert</nom>
+    <cognoms>Johnson</cognoms>
+    <telefons>
+        <telefon>1122334455</telefon>
+    </telefons>
+    <correus>
+        <correu>robert.johnson@example.com</correu>
+    </correus>
+</tutor>
+</classe>

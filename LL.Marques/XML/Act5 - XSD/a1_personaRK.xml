@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="a1_personaRK.xsd">
+    <NIF>12345678A</NIF> <!-- NIF obligatori -->
+    <nom>Carla</nom> <!-- Nom obligatori -->
+    <cognom1>Ferrer</cognom1> <!-- Cognom1 obligatori -->
+    <cognom2>Anamika</cognom2> <!-- Cognom2 no obligatori -->
+</persona>
+
+<!-- Compare this snippet from a1_personaRK.xml: 
+ * Aquest és un fitxer XSD que defineix l'esquema per a una persona.
+ * Conté un element "persona" amb els següents elements dins de la seqüència:
+ * - "NIF" (obligatori): el número d'identificació fiscal de la persona.
+ * - "nom" (obligatori): el nom de la persona.
+ * - "cognom1" (obligatori): el primer cognom de la persona.
+ * - "cognom2" (opcional): el segon cognom de la persona.
+ */-->

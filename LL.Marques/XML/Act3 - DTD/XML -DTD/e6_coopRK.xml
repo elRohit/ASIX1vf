@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE cooperativa SYSTEM "e6_coopRK.dtd">
+<cooperativa>
+    <!-- Inici del bloc de dades del soci 1 -->
+    <soci>
+        <!-- Inici del bloc d'identificador del soci 1 -->
+        <identificador>
+            <numero>1</numero>
+            <data>2022-01-01</data>
+        </identificador>
+        <!-- Fi del bloc d'identificador del soci 1 -->
+        <nom>John</nom>
+        <cognom>Doe</cognom>
+        <dataNaixement>1990-01-01</dataNaixement>
+        <telefon>123456789</telefon>
+    </soci>
+    <!-- Fi del bloc de dades del soci 1 -->
+    
+    <!-- Inici del bloc de dades del soci 2 -->
+    <soci>
+        <!-- Inici del bloc d'identificador del soci 2 -->
+        <identificador>
+            <clau>ABC123</clau>
+        </identificador>
+        <!-- Fi del bloc d'identificador del soci 2 -->
+        <nom>Jane</nom>
+        <cognom>Doe</cognom>
+        <cognom>Smith</cognom>
+        <edat>32</edat>
+        <telefon>234567890</telefon>
+    </soci>
+    <!-- Fi del bloc de dades del soci 2 -->
+    
+    <!-- Agrega més elements de soci aquí -->
+</cooperativa>

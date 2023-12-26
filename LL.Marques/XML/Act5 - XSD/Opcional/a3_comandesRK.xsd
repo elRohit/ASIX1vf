@@ -1,0 +1,52 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="comandes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="articles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="article" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nom" type="xs:string"/>
+                                        <xs:element name="model">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="referencia" type="xs:string"/>
+                                                        <xs:attribute name="tipus" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sucursal" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="adresa" type="xs:string"/>
+                            <xs:element name="treballador" type="xs:string"/>
+                            <xs:element name="data" type="xs:date"/>
+                            <xs:element name="nomarticle" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="unitats" type="xs:integer"/>
+                                        <xs:element name="preu" type="xs:integer"/>
+                                        <xs:element name="termini" type="xs:date"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="codi" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="codi" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

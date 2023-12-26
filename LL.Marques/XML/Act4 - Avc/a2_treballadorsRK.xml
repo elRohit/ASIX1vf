@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE treballadors SYSTEM "a2_treballadorsRK.dtd">
+<!-- Aquest codi XML representa un arxiu anomenat "a2_treballadorsRK.xml" que conté informació sobre treballadors en una empresa. L'arxiu està estructurat utilitzant etiquetes XML per a cada treballador, amb atributs com "tipus" i "departament" per descriure el rol i el departament de cada treballador.
+
+Cada treballador té les següents dades:
+
+"nom": el nom del treballador.
+"cognom": el cognom o cognoms del treballador.
+"any_entrada": l'any en què el treballador va començar a treballar a l'empresa.
+"salari": el salari del treballador.
+Algunes etiquetes de treballador també tenen una etiqueta addicional "sexe" per especificar el gènere del treballador.
+
+Aquest arxiu XML proporciona una estructura organitzada per emmagatzemar i representar informació sobre treballadors en una empresa. Pot ser utilitzat per a diverses finalitats com l'emmagatzematge de dades, l'anàlisi o la generació de informes sobre el personal de l'empresa.Aquest codi XML representa un arxiu
+-->
+<treballadors>
+  <treballador tipus="director" departament="administracio">
+    <nom>Jaume</nom>
+    <cognom>Pons</cognom>
+    <any_entrada>1998</any_entrada>
+    <salari>2345</salari>
+  </treballador>
+  <treballador tipus="enginyer" departament="obres">
+    <nom>Anna</nom>
+    <cognom>Pico</cognom>
+    <cognom>Ruiz</cognom>
+    <any_entrada>1987</any_entrada>
+    <salari>2245</salari>
+  </treballador>
+  <treballador tipus="oficina" departament="vendes">
+    <nom>Maria</nom>
+    <cognom>Garcia</cognom>
+    <cognom>Pagès</cognom>
+    <any_entrada>2008</any_entrada>
+    <salari>1945</salari>
+    <sexe>Dona</sexe>
+  </treballador>
+  <treballador tipus="oficina" departament="comercial">
+    <nom>Manuel</nom>
+    <cognom>Pera</cognom>
+    <cognom>Llimona</cognom>
+    <any_entrada>2018</any_entrada>
+    <salari>2006</salari>
+  </treballador>
+</treballadors>

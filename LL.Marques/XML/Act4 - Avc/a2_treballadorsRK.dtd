@@ -1,0 +1,10 @@
+<!ELEMENT treballadors (treballador+)>
+<!ELEMENT treballador (nom, cognom+, any_entrada, salari, sexe?)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT any_entrada (#PCDATA)>
+<!ELEMENT salari (#PCDATA)>
+<!ELEMENT sexe (#PCDATA)>
+<!ATTLIST treballador
+          tipus (director|enginyer|oficina) #REQUIRED
+          departament (administracio|obres|vendes|comercial) #REQUIRED>

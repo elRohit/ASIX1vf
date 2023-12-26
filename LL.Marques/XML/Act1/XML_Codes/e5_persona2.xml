@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<persona>
+    <dni>12345554Y </dni>
+    <nom>Anna </nom>
+    <cognom1>Fernández </cognom1>
+    <cognom2>Pascual </cognom2>
+    <adreça>
+        <carrer>Carrer Major</carrer>
+        <numero>46</numero>
+        <pis>4</pis>
+        <porta>3</porta>
+    </adreça>
+</persona>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<llibre titol="LlibreTitle">
+  <autors>
+    <author nom="Author1FirstName" cognoms="Author1LastName" />
+    <author nom="Author2FirstName" cognoms="Author2LastName" />
+  </autors>
+  <secció titol="Section1Title">
+    <capítol titol="Chapter1Title">
+      <paragraf>&lt;element id=”10”&gt;&amp;lt;&lt;/element&gt;</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+    <capítol titol="Chapter2Title">
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf><![CDATA[<element id=”10”>&lt;</element>]]></paragraf>
+    </capítol>
+  </secció>
+  <secció titol="Section2Title">
+    <capítol titol="Chapter1Title">
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+    <capítol titol="Chapter2Title">
+      <paragraf>Paragraph1Text</paragraf>
+      <paragraf>Paragraph2Text</paragraf>
+    </capítol>
+  </secció>
+</llibre>

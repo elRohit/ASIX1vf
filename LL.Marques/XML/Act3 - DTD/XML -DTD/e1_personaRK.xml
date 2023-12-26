@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE persona [
+<!-- Definició de l'element persona --><!ELEMENT persona (NIF , nom , cognom1 , cognom2?)>
+<!-- Definició de l'element NIF --><!ELEMENT NIF (#PCDATA)>
+<!-- Definició de l'element nom --><!ELEMENT nom (#PCDATA)>
+<!-- Definició de l'element cognom1 --><!ELEMENT cognom1 (#PCDATA)>
+<!-- Definició de l'element cognom2 --><!ELEMENT cognom2 (#PCDATA)>
+]>
+<!-- Element persona -->
+<persona>
+    <NIF>12345678A</NIF> <!-- NIF obligatori -->
+    <nom>Carla</nom> <!-- Nom obligatori -->
+    <cognom1>Ferrer</cognom1> <!-- Cognom1 obligatori -->
+    <cognom2>Anamika</cognom2> <!-- Cognom2 no obligatori -->
+</persona>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE comandes SYSTEM "a3_comandesRK.dtd">
+<!--
+    Aquest fitxer XML conté una estructura de dades que representa comandes i articles associats a diferents sucursals.
+    Les comandes estan organitzades en una estructura jeràrquica, amb nodes per als articles i les sucursals.
+    Cada article té un nom i un model amb una referència i un tipus.
+    Cada sucursal té un codi, una adreça, un treballador responsable, una data i una llista d'articles associats.
+    Cada article associat a una sucursal té un codi, un nombre d'unitats, un preu i una data de termini.
+-->
+<comandes>
+    <articles>
+        <article>
+            <nom>A</nom>
+            <model referencia="_1" tipus="X"/>
+        </article>
+        <article>
+            <nom>B</nom>
+            <model referencia="_2" tipus="Y"/>
+        </article>
+        <article>
+            <nom>C</nom>
+            <model referencia="_3" tipus="Z"/>
+        </article>
+        <article>
+            <nom>D</nom>
+            <model referencia="_4" tipus="W"/>
+        </article>
+    </articles>
+    <sucursal codi="_5">
+        <adreça>Carrer Vilar Petit</adreça>
+        <treballador>Cristina Rodríguez</treballador>
+        <data>2022-01-01</data>
+        <nomarticle codi="_5">
+            <unitats>10</unitats>
+            <preu>100</preu>
+            <termini>2022-01-10</termini>
+        </nomarticle>
+        <nomarticle codi="_5">
+            <unitats>5</unitats>
+            <preu>50</preu>
+            <termini>2022-01-05</termini>
+        </nomarticle>
+        <nomarticle codi="_5">
+            <unitats>8</unitats>
+            <preu>80</preu>
+            <termini>2022-01-08</termini>
+        </nomarticle>
+    </sucursal>
+    <sucursal codi="_9">
+        <adreça>Carrrer Vilar Gran</adreça>
+        <treballador>Rohit Kumar</treballador>
+        <data>2022-02-01</data>
+        <nomarticle codi="_9">
+            <unitats>15</unitats>
+            <preu>150</preu>
+            <termini>2022-02-10</termini>
+        </nomarticle>
+        <nomarticle codi="_9">
+            <unitats>3</unitats>
+            <preu>30</preu>
+            <termini>2022-02-05</termini>
+        </nomarticle>
+        <nomarticle codi="_9">
+            <unitats>6</unitats>
+            <preu>60</preu>
+            <termini>2022-02-08</termini>
+        </nomarticle>
+    </sucursal>
+    <sucursal codi="_14">
+        <adreça>Adreça 3</adreça>
+        <treballador>Cristina Rodríguez</treballador>
+        <data>2022-03-01</data>
+        <nomarticle codi="_14">
+            <unitats>20</unitats>
+            <preu>200</preu>
+            <termini>2022-03-10</termini>
+        </nomarticle>
+        <nomarticle codi="_14">
+            <unitats>4</unitats>
+            <preu>40</preu>
+            <termini>2022-03-05</termini>
+        </nomarticle>
+        <nomarticle codi="_14">
+            <unitats>7</unitats>
+            <preu>70</preu>
+            <termini>2022-03-08</termini>
+        </nomarticle>
+    </sucursal>
+</comandes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE escriptors SYSTEM "e7_escriptorsRK.dtd">
+<escriptors>
+    <!-- Inici del bloc d'escriptors -->
+    <escriptor>
+        <!-- Inici de l'escriptor John Doe -->
+        <nom>John</nom>
+        <cognom>Doe</cognom>
+        <llengua>English</llengua>
+        <premi>Nobel Prize in Literature</premi>
+        <obra>
+            <llibre>The Great Novel</llibre>
+            <data>2022-01-01</data>
+        </obra>
+        <!-- Fi de l'escriptor John Doe -->
+    </escriptor>
+    <escriptor>
+        <!-- Inici de l'escriptor Jane Doe Smith -->
+        <nom>Jane</nom>
+        <cognom>Doe</cognom>
+        <cognom>Smith</cognom>
+        <llengua>Spanish</llengua>
+        <llengua>English</llengua>
+        <obra>
+            <article>The Great Article</article>
+        </obra>
+        <!-- Fi de l'escriptor Jane Doe Smith -->
+    </escriptor>
+    <!-- Agrega més elements d'escriptor aquí -->
+</escriptors>
+<!-- Fi del bloc d'escriptors -->
