@@ -1,0 +1,43 @@
+{
+    "pacients": [
+        {
+            "nom": "Carla Peraferrer i Pons",
+            "data_naixement": "1990-01-01",
+            "grup_sanguini": "A+",
+            "al·lèrgies": [
+                "Pol·len",
+                "Lactosa"
+            ],
+            "condicions": [
+                "Hipertensió",
+                "Asma"
+            ],
+            "medicaments": [
+                "Paracetamol",
+                "Ventolín"
+            ],
+            "contacte_emergencia": {
+                "telefon": "123456789",
+                "email": "pacient1@example.com"
+            }
+        },
+        {
+            "nom": "Cristina Rodriguez Pascual",
+            "data_naixement": "1985-05-10",
+            "grup_sanguini": "B-",
+            "al·lèrgies": [
+                "Àcaris"
+            ],
+            "condicions": [
+                "Diabetis"
+            ],
+            "medicaments": [
+                "Insulina"
+            ],
+            "contacte_emergencia": {
+                "telefon": "987654321",
+                "email": "pacient2@example.com"
+            }
+        }
+    ]
+}
