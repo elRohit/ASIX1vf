@@ -15,13 +15,6 @@ FROM rental
 GROUP BY TO_CHAR(lower(rental_period), 'MM/YYYY')
 ORDER BY TO_DATE(TO_CHAR(lower(rental_period), 'MM/YYYY'), 'MM/YYYY') ASC
 
-
-
-
-select count(film_id), film.title, film.release_year, film.replacement_cost
-
-
-
 SELECT film.title, film.release_year, 
     CASE 
         WHEN TRUNC(film.replacement_cost,1) IS NULL THEN 0
